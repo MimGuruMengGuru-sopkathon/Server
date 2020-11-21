@@ -26,16 +26,16 @@ router.use('/posts', require('./posts'));
 
 
 🚗 [GET] 오늘의 밈 조회
-- /main/today
+- `/main/today`
 
 🚗 [GET] 키워드별 추천
-- /main/keyword?=""
+- `/main/keyword?=""`
 
 🚗 [GET] 검색
-- /search/hashtag?=""
+- `/search/hashtag?=""`
 
 🚗 [GET] 상세 뷰
-- /detail/hashtag?=""
+- `/detail/hashtag?=""`
 
 
 [예시]
