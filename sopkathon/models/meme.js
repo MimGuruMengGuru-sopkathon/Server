@@ -9,10 +9,6 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING(500),
             unique: true,
             allowNull: false,
-        },
-        like: {
-            type: DataTypes.INTEGER,
-            allowNull: true,
         }
     }, {
         //모델의 옵션들을 지정하는곳    
