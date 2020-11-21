@@ -5,7 +5,7 @@
 
 ## API 명세서
 
-[api 링크](https://github.com/ON-SOPT-SERVER/ON-SOPT-SERVER-SEMINAR/wiki)
+[api 링크](https://github.com/MimGuruMengGuru-sopkathon/Server/wiki)
 
 ## sequelize Model
 
