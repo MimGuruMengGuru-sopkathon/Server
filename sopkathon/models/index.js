@@ -12,6 +12,9 @@ if (config.use_env_variable) {
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
+
 db.Meme = require('./meme')(sequelize, Sequelize);
+db.Post = require('./post')(sequelize, Sequelize);
+
 
 module.exports = db;
