@@ -12,7 +12,8 @@ module.exports = {
             const searchData = await Meme.findAll({ 
                 where: {tag: tag}, 
                 order: Sequelize.literal('rand()'), 
-                limit: 1 // 랜덤으로 가져오는 개수, 추후 6개로 수정
+
+                limit: 6 // 랜덤으로 가져오는 개수, 추후 6개로 수정
             })
             return res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.SEARCH_READ_ALL_SUCCESS, searchData));
         } catch (error) {

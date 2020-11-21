@@ -6,12 +6,12 @@ var logger = require('morgan');
 
 const { sequelize } = require('./models');
 sequelize.sync({ alter: false })
-.then(() => {
-  console.log('데이터베이스 연결 성공.')
-})
-.catch((error) => {
-  console.error(error);
-});
+  .then(() => {
+    console.log('데이터베이스 연결 성공.')
+  })
+  .catch((error) => {
+    console.error(error);
+  });
 
 var indexRouter = require('./routes/index');
 
@@ -22,6 +22,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(logger('dev'));
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
