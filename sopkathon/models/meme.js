@@ -10,10 +10,6 @@ module.exports = (sequelize, DataTypes) => {
             unique: true,
             allowNull: false,
         },
-        like: {
-            type: DataTypes.INTEGER,
-            allowNull: true,
-        }
     }, {
         //모델의 옵션들을 지정하는곳    
         freezeTableName: true,
