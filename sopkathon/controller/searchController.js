@@ -2,19 +2,13 @@ const util = require('../modules/util');
 const responseMessage = require('../modules/responseMessage');
 const statusCode = require('../modules/statusCode');
 const { Meme } = require('../models');
-const { Op } = require("sequelize");
 
 module.exports = {
     readAll: async (req, res) => {
-        const { hashtag } = req.query;
+        const { tag } = req.query;
         try {
             const searchData = await Meme.findAll({
-                where: {
-                    [Op.or]: [
-                        { hashtag1: hashtag },
-                        { hashtag2: hashtag }
-                    ]
-                }
+                where: {tag: tag}
             });
 
             return res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.SEARCH_READ_ALL_SUCCESS, searchData));

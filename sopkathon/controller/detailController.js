@@ -7,15 +7,10 @@ const { Op } = require('sequelize');
 
 module.exports = {
     readAll: async (req, res) => {
-        const {hashtag} = req.query;
+        const {tag} = req.query;
         try {
             const searchData = await Meme.findAll({ 
-                where: {
-                    [Op.or]: [
-                        { hashtag1: hashtag },
-                        { hashtag2: hashtag }
-                    ]
-                }, 
+                where: {tag: tag}, 
                 order: Sequelize.literal('rand()'), 
                 limit: 1 // 랜덤으로 가져오는 개수, 추후 6개로 수정
             })

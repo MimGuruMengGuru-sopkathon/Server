@@ -10,18 +10,6 @@ module.exports = (sequelize, DataTypes) => {
             unique: true,
             allowNull: false,
         },
-        hashtag1: {
-            type: DataTypes.STRING(30),
-            allowNull: false,
-        },
-        hashtag2: {
-            type: DataTypes.STRING(30),
-            allowNull: true,
-        },
-        hashtag3: {
-            type: DataTypes.STRING(30),
-            allowNull: true,
-        },
         like: {
             type: DataTypes.INTEGER,
             allowNull: true,
