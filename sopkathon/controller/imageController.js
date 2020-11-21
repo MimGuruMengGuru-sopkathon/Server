@@ -22,11 +22,11 @@ module.exports = {
     },
 
     readAll: async (req, res) => {
-        const { hashtag } = req.query;
+        const { keyword } = req.query;
         try {
             const readImage = await Meme.findAll({
                 where: {
-                    tag: hashtag
+                    tag: keyword
                 }
             })
             return res
