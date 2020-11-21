@@ -18,7 +18,7 @@ router.use('/posts', require('./posts'));
 
 ## ERD
 
-![ERD](https://github.com/ON-SOPT-SERVER/ON-SOPT-SERVER-SEMINAR/blob/master/5th-seminar/public/images/ERD.png)
+![ERD](https://github.com/MimGuruMengGuru-sopkathon/Server/blob/main/meme-images/스크린샷%202020-11-22%20오전%204.50.59.png?raw=true)
 
 #
 
