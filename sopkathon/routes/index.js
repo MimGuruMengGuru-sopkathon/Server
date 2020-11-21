@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.use('/search', require('./search'));
 router.use('/detail', require('./detail'));
-router.use('/posts', require('./posts'));
+router.use('/main', require('./main'));
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
