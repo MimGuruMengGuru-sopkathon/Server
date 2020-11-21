@@ -13,7 +13,7 @@
 router.use('/search', require('./search'));
 router.use('/detail', require('./detail'));
 router.use('/posts', require('./posts'));
-
+```
 
 
 ## ERD
